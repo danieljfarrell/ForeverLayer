@@ -13,12 +13,13 @@
 		658910F918F2C81D0073D6C5 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 658910F718F2C81D0073D6C5 /* Credits.rtf */; };
 		658910FC18F2C81D0073D6C5 /* DFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 658910FB18F2C81D0073D6C5 /* DFAppDelegate.m */; };
 		658910FF18F2C81D0073D6C5 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 658910FD18F2C81D0073D6C5 /* MainMenu.xib */; };
-		6589110218F2C81D0073D6C5 /* ForeverLayer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6589110018F2C81D0073D6C5 /* ForeverLayer.xcdatamodeld */; };
 		6589110418F2C81D0073D6C5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6589110318F2C81D0073D6C5 /* Images.xcassets */; };
 		6589110B18F2C81D0073D6C5 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6589110A18F2C81D0073D6C5 /* XCTest.framework */; };
 		6589110C18F2C81D0073D6C5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 658910E818F2C81D0073D6C5 /* Cocoa.framework */; };
 		6589111418F2C81D0073D6C5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6589111218F2C81D0073D6C5 /* InfoPlist.strings */; };
 		6589111618F2C81D0073D6C5 /* ForeverLayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6589111518F2C81D0073D6C5 /* ForeverLayerTests.m */; };
+		6589112118F2C8CF0073D6C5 /* ForeverLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6589112018F2C8CF0073D6C5 /* ForeverLayer.m */; };
+		6589112318F2C9FC0073D6C5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6589112218F2C9FC0073D6C5 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,13 +46,15 @@
 		658910FA18F2C81D0073D6C5 /* DFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DFAppDelegate.h; sourceTree = "<group>"; };
 		658910FB18F2C81D0073D6C5 /* DFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DFAppDelegate.m; sourceTree = "<group>"; };
 		658910FE18F2C81D0073D6C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		6589110118F2C81D0073D6C5 /* ForeverLayer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ForeverLayer.xcdatamodel; sourceTree = "<group>"; };
 		6589110318F2C81D0073D6C5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6589110918F2C81D0073D6C5 /* ForeverLayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForeverLayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6589110A18F2C81D0073D6C5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6589111118F2C81D0073D6C5 /* ForeverLayerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ForeverLayerTests-Info.plist"; sourceTree = "<group>"; };
 		6589111318F2C81D0073D6C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6589111518F2C81D0073D6C5 /* ForeverLayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ForeverLayerTests.m; sourceTree = "<group>"; };
+		6589111F18F2C8CF0073D6C5 /* ForeverLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForeverLayer.h; sourceTree = "<group>"; };
+		6589112018F2C8CF0073D6C5 /* ForeverLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForeverLayer.m; sourceTree = "<group>"; };
+		6589112218F2C9FC0073D6C5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6589112318F2C9FC0073D6C5 /* QuartzCore.framework in Frameworks */,
 				658910E918F2C81D0073D6C5 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -97,6 +101,7 @@
 		658910E718F2C81D0073D6C5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6589112218F2C9FC0073D6C5 /* QuartzCore.framework */,
 				658910E818F2C81D0073D6C5 /* Cocoa.framework */,
 				6589110A18F2C81D0073D6C5 /* XCTest.framework */,
 				658910EA18F2C81D0073D6C5 /* Other Frameworks */,
@@ -119,9 +124,10 @@
 			children = (
 				658910FA18F2C81D0073D6C5 /* DFAppDelegate.h */,
 				658910FB18F2C81D0073D6C5 /* DFAppDelegate.m */,
+				6589111F18F2C8CF0073D6C5 /* ForeverLayer.h */,
+				6589112018F2C8CF0073D6C5 /* ForeverLayer.m */,
 				658910FD18F2C81D0073D6C5 /* MainMenu.xib */,
 				6589110318F2C81D0073D6C5 /* Images.xcassets */,
-				6589110018F2C81D0073D6C5 /* ForeverLayer.xcdatamodeld */,
 				658910EF18F2C81D0073D6C5 /* Supporting Files */,
 			);
 			path = ForeverLayer;
@@ -256,9 +262,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6589110218F2C81D0073D6C5 /* ForeverLayer.xcdatamodeld in Sources */,
 				658910FC18F2C81D0073D6C5 /* DFAppDelegate.m in Sources */,
 				658910F518F2C81D0073D6C5 /* main.m in Sources */,
+				6589112118F2C8CF0073D6C5 /* ForeverLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,19 +485,6 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		6589110018F2C81D0073D6C5 /* ForeverLayer.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				6589110118F2C81D0073D6C5 /* ForeverLayer.xcdatamodel */,
-			);
-			currentVersion = 6589110118F2C81D0073D6C5 /* ForeverLayer.xcdatamodel */;
-			path = ForeverLayer.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 658910DD18F2C81D0073D6C5 /* Project object */;
 }
